@@ -1,0 +1,18 @@
+<{if $podcast_display_breadcrumb}>
+<div class="podcast_headertable">
+	<{if $podcast_module_home}>
+	<span class="podcast_modulename"><{$podcast_module_home}></span>
+	<{/if}>
+	<{if $podcast_category_path}>
+	<span class="podcast_breadcrumb">
+		<{if $podcast_module_home}>
+		&gt;
+		<{/if}>
+		<{$podcast_category_path}></span>
+	<{/if}>
+</div>
+<{else}>
+<div>
+	<h1><{$podcast_module_home}></h1>
+</div>
+<{/if}>
